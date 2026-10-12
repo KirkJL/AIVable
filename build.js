@@ -1,0 +1,11 @@
+﻿const fs = require('node:fs');
+let html = fs.readFileSync('index.html', 'utf8').replace(/^\uFEFF/, '');
+const css = fs.readFileSync('styles.css', 'utf8').replace(/^\uFEFF/, '').replace(/^@import[^;]+;\s*/, '');
+const js = ['tracks.js','app.js'].map(file => fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, '')).join('\n');
+const styles = '<!-- AIVABLE_STYLES_START -->\n<style>\n' + css + '\n</style>\n<!-- AIVABLE_STYLES_END -->';
+const scripts = '<!-- AIVABLE_SCRIPTS_START -->\n<script>\n' + js.replace(/<\/script/gi, '<\\/script') + '\n</script>\n<!-- AIVABLE_SCRIPTS_END -->';
+html = html.includes('<!-- AIVABLE_STYLES_START -->') ? html.replace(/<!-- AIVABLE_STYLES_START -->[\s\S]*?<!-- AIVABLE_STYLES_END -->/, () => styles) : html.replace(/<link rel="stylesheet" href="styles.css">/, () => styles);
+html = html.replace(/<script defer src="(?:tracks|app)\.js"><\/script>/g, '');
+html = html.includes('<!-- AIVABLE_SCRIPTS_START -->') ? html.replace(/<!-- AIVABLE_SCRIPTS_START -->[\s\S]*?<!-- AIVABLE_SCRIPTS_END -->/, () => scripts) : html.replace('</body>', () => scripts + '\n</body>');
+fs.writeFileSync('index.html', html, 'utf8');
+console.log('Built self-contained index.html with styles and catalogue scripts.');

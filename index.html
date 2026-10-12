@@ -1,102 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIVable – Royalty-Free Music</title>
-  <style>
-    :root {
-      --main-bg: #0e0e0e;
-      --accent: #39ff14;
-      --text: #ffffff;
-      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Discover AIVable music for your next creation."><title>AIVable — Find your sound</title><!-- AIVABLE_STYLES_START -->
+<style>
+500;600;700&family=Manrope:wght@500;700;800&display=swap');
+:root{--bg:#111411;--panel:#1a1e19;--text:#f1f2e9;--muted:#969d93;--green:#d4ef83;--line:#30352d}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--green);outline-offset:4px}.wrap{max-width:1280px;margin:auto;padding-left:48px;padding-right:48px}header{height:100px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{font-family:Manrope,sans-serif;font-size:26px;font-weight:800;letter-spacing:-1px}.logo b{background:var(--green);color:var(--bg);padding:2px 9px;border-radius:8px;margin-right:5px}nav{display:flex;gap:30px;font-size:13px;color:var(--muted)}.outline{border:1px solid var(--line);padding:12px 17px;border-radius:6px;font-size:12px}.hero{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:50px;padding-top:65px;padding-bottom:65px}.eyebrow{font-size:10px;letter-spacing:1.8px;font-weight:700;color:var(--green)}h1,h2,h3{font-family:Manrope,sans-serif}h1{font-size:clamp(40px,4.6vw,62px);line-height:1.13;letter-spacing:-3px;margin:22px 0}h1 em{font-style:normal;color:var(--green)}.intro{font-size:15px;color:var(--muted);line-height:1.8}.primary{display:inline-block;background:var(--green);color:#192211;font-size:13px;font-weight:700;border:0;border-radius:5px;padding:15px 22px}.note{font-size:11px!important;color:var(--muted);line-height:1.8}.art{height:360px;position:relative;overflow:hidden;border-radius:6px;background:radial-gradient(ellipse at 90% 20%,#eff4c5,transparent 65%),linear-gradient(135deg,#93aa60,#d9eb9e);color:#1b2915}.art:before{content:'';position:absolute;width:420px;height:420px;border:1px solid #27391533;border-radius:50%;top:-100px;left:-170px}.record{position:absolute;width:310px;height:310px;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-18deg);border-radius:50%;background:repeating-radial-gradient(circle,#21251e 0 2px,#35382c 3px,#171b16 4px);box-shadow:20px 25px 30px #394c4d55}.record:after{content:'';position:absolute;inset:0;border-radius:50%;background:conic-gradient(transparent,#ffffff20,transparent,transparent,#ffffff18,transparent)}.label{position:absolute;inset:100px;background:var(--green);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:20px}.label small{font-size:5px;letter-spacing:1px;margin-top:5px}.label i{width:10px;height:10px;background:var(--bg);border-radius:50%;margin-top:14px}.art>span{position:absolute;bottom:20px;left:22px;font-size:8px;letter-spacing:2px}.art>b{position:absolute;top:20px;right:20px;font-size:12px}.ticker{border-block:1px solid var(--line);color:#b9c0b3;font-size:10px;letter-spacing:1.4px}.ticker .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:19px}.ticker b{font-size:20px;color:var(--green)}.library{padding-top:50px;padding-bottom:65px}.heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}h2{font-size:34px;letter-spacing:-1.3px;margin:0}.heading>p{font-size:12px;line-height:1.8;color:var(--muted)}.notice{background:#d4ef8309;border:1px solid #d4ef8320;padding:12px 15px;border-radius:5px;font-size:11px;color:#adb69b;line-height:1.7;margin-bottom:22px}.notice strong{font-size:9px;letter-spacing:1px;color:var(--green);margin-right:12px}.toolbar{display:flex;gap:20px}.search{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:5px;background:var(--panel);flex:1;padding:0 15px;font-size:25px;color:var(--muted)}input{width:100%;padding:15px 0;border:0;background:none;color:var(--text);font-size:13px}select{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:5px;font-size:12px;padding:10px 12px}.filters{display:flex;justify-content:space-between;gap:20px;margin-top:18px}#genres{display:flex;gap:8px;flex-wrap:wrap}#genres button{background:none;border:1px solid var(--line);border-radius:5px;color:var(--muted);font-size:11px;padding:9px 16px}#genres button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#192211}.results{display:flex;justify-content:space-between;align-items:center;margin:24px 0 18px;font-size:11px;color:var(--muted)}.results button{border:0;background:none;color:var(--muted);font-size:12px}.results button[aria-pressed=true]{color:var(--green)}#grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px}.cover{height:220px;position:relative;overflow:hidden;border-radius:6px;background:var(--cover);isolation:isolate}.violet{--cover:#968cb3;--ink:#392b64}.amber{--cover:#d3a35c;--ink:#f5cf82}.blue{--cover:#6e8e9b;--ink:#274958}.sage{--cover:#a2b5a0;--ink:#d9e1bd}.pink{--cover:#bd8d99;--ink:#6d314f}.sand{--cover:#d2c6a9;--ink:#879b62}.cover-brand{position:absolute;top:16px;left:18px;font-size:9px;letter-spacing:1px;color:#161c29c0;z-index:2}.cover h3{position:absolute;left:18px;bottom:30px;font-size:25px;letter-spacing:-1px;color:white;z-index:2;margin:0;text-shadow:0 2px 20px #0003}.cover small{position:absolute;bottom:16px;left:18px;color:#ffffffb0;font-size:7px;letter-spacing:1.8px;z-index:2}.shape{position:absolute;width:220px;height:220px;top:5px;right:-10px}.rings .shape{border-radius:50%;background:repeating-radial-gradient(ellipse,transparent 0 12px,var(--ink) 13px 16px);transform:rotate(-30deg) scaleY(.75)}.sun .shape{width:160px;height:160px;right:45px;top:20px;border-radius:50%;background:var(--ink);box-shadow:0 0 70px #fff5}.sun:after{content:'';position:absolute;inset:115px -20px -20px;background:repeating-linear-gradient(0deg,#644b2a 0 1px,#a57842aa 1px 9px);transform:rotate(-8deg)}.mountain .shape{width:300px;height:250px;top:38px;background:linear-gradient(135deg,#b5cbd0,var(--ink));clip-path:polygon(0 100%,30% 35%,44% 55%,65% 0,100% 100%)}.waves .shape{width:360px;right:-50px;background:repeating-radial-gradient(ellipse at 50% 100%,transparent 0 18px,var(--ink) 19px 23px);transform:rotate(-25deg)}.grid{background:linear-gradient(145deg,#382e53,#ca8a91)}.grid .shape{width:400px;height:300px;top:70px;right:-35px;background:repeating-linear-gradient(90deg,transparent 0 23px,#f4b4b580 24px 25px),repeating-linear-gradient(0deg,transparent 0 23px,#f4b4b580 24px 25px);transform:perspective(160px) rotateX(45deg) rotateZ(-20deg)}.flower .shape{width:155px;height:155px;border-radius:0 65% 0 65%;background:var(--ink);transform:rotate(-25deg);right:48px;top:24px;box-shadow:30px 20px 0 #ecdfb1,-30px 25px 0 #738252}.play{position:absolute;right:16px;bottom:17px;width:42px;height:42px;border-radius:50%;border:1px solid #ffffff60;background:#111411bc;color:white;z-index:3;font-size:17px}.play:hover{background:#111411}.track-title{display:flex;align-items:center;justify-content:space-between;margin-top:13px}.track-title h3{font-size:15px;margin:0}.save{border:0;background:none;color:var(--muted);font-size:23px;padding:0 2px}.save[aria-pressed=true]{color:var(--green)}.meta,.detail{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:5px}.detail{font-size:8px;letter-spacing:1px;margin-top:13px;padding-top:10px;border-top:1px solid var(--line);color:#737d6d}#empty{text-align:center;padding:50px;color:var(--muted)}.usage{display:grid;grid-template-columns:1fr 1fr;gap:80px;border-top:1px solid var(--line);padding-block:48px}.usage p{color:var(--muted);font-size:14px;line-height:1.8}.usage .eyebrow{color:var(--green);font-size:10px}.usage a{color:var(--green);font-size:12px}.support{display:flex;align-items:center;gap:24px;background:var(--panel);padding-block:30px;border-block:1px solid var(--line)}.support>span{font-size:45px;color:var(--green)}.support h3{font-size:19px;margin:0 0 6px}.support p{font-size:12px;color:var(--muted);margin:0}.support a{margin-left:auto;white-space:nowrap}footer{display:flex;align-items:center;justify-content:space-between;padding-block:35px}footer .logo{font-size:20px}footer p,footer>span{font-size:10px;color:var(--muted)}dialog{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:28px;width:min(800px,90vw)}dialog::backdrop{background:#000c}dialog h2{margin-bottom:20px}dialog iframe{width:100%;aspect-ratio:16/9;border:0}dialog a{display:inline-block;margin-top:18px;color:var(--green);font-size:13px}#close{float:right;font-size:25px;color:var(--text);background:none;border:0}[hidden]{display:none!important}@media(max-width:900px){.wrap{padding-inline:28px}.hero{gap:25px}.art{height:310px}.record{width:260px;height:260px}.label{inset:85px}h1{font-size:43px}.ticker .wrap{font-size:8px;gap:12px}.cover{height:180px}.cover h3{font-size:20px}#genres button{padding:9px 12px}.usage{gap:35px}}@media(max-width:650px){.wrap{padding-inline:20px}header{height:80px}nav{display:none}.logo{font-size:23px}.outline{font-size:10px;padding:10px}.hero{grid-template-columns:1fr;padding-block:35px;gap:30px}h1{font-size:45px;letter-spacing:-2px}.art{height:290px}.hero .eyebrow{font-size:8px}.ticker .wrap{flex-wrap:wrap;justify-content:center;font-size:8px;gap:10px 15px}.ticker b{font-size:13px}.library{padding-block:35px}h2{font-size:28px}.heading>p{display:none}.toolbar{flex-wrap:wrap;justify-content:end;gap:12px}.search{flex-basis:100%}.filters{flex-direction:column;gap:12px}.filters select{align-self:flex-end}#grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}.cover{height:175px}.cover h3{font-size:18px;left:12px;bottom:43px}.cover-brand{left:12px;font-size:7px}.cover small{left:12px;font-size:6px}.play{width:32px;height:32px;right:10px;bottom:10px}.track-title h3{font-size:12px}.meta{font-size:9px}.detail{font-size:7px;letter-spacing:.4px}.usage{grid-template-columns:1fr;gap:24px;padding-block:30px}.support{flex-wrap:wrap;gap:15px}.support>div{flex:1}.support a{margin-left:60px}footer{flex-wrap:wrap;gap:20px}footer p{display:none}.notice strong{display:block}.shape{right:-75px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-    body {
-      margin: 0;
-      padding: 0;
-      background: var(--main-bg);
-      color: var(--text);
-      font-family: var(--font);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 20px;
-      min-height: 100vh;
-      text-align: center;
-      box-sizing: border-box;
-    }
+</style>
+<!-- AIVABLE_STYLES_END --></head>
+<body><header class="wrap"><a class="logo" href="./"><b>ai</b> AIVable</a><nav><a href="#library">Music library</a><a href="#usage">Using the music</a></nav><a class="outline" href="https://www.youtube.com/@aivable" target="_blank" rel="noopener">YouTube channel ↗</a></header>
+<main><section class="hero wrap"><div><p class="eyebrow">● INDEPENDENT SOUND. UNLIMITED IDEAS.</p><h1>Your next creation.<br>Your next <em>sound.</em></h1><p class="intro">Music made to move your ideas forward.<br>Explore AIVable and find your project's mood.</p><a class="primary" href="#library">Find your soundtrack ↘</a><p class="note">Created by AIVable · Hosted on YouTube</p></div><div class="art" aria-hidden="true"><div class="record"><div class="label">AIVable<small>ORIGINAL SOUNDS</small><i></i></div></div><span>A SOUND FOR EVERY STORY</span><b>VOL. 01</b></div></section>
+<div class="ticker"><div class="wrap">FOR THE FILMMAKERS <b>✳</b> THE STORYTELLERS <b>✳</b> THE LATE-NIGHT EDITORS <b>✳</b> THE NEXT BIG IDEA</div></div>
+<section class="library wrap" id="library"><div class="heading"><div><p class="eyebrow">THE MUSIC LIBRARY</p><h2>Find your frequency.</h2></div><p>A little inspiration.<br>A whole new direction.</p></div><p class="notice"><strong>PREVIEW CATALOGUE</strong> Sample entries show how the library works. Official releases will appear here once added.</p><div class="toolbar"><label class="search">⌕ <input id="search" type="search" placeholder="Search tracks, genres, moods…" aria-label="Search tracks"></label><select id="sort" aria-label="Sort tracks"><option value="newest">Newest first</option><option value="name">Track name</option><option value="duration">Duration</option></select></div><div class="filters"><div id="genres" role="group" aria-label="Genre"></div><select id="mood" aria-label="Mood"><option value="all">All moods</option></select></div><div class="results"><span id="count" role="status" aria-live="polite"></span><button id="saved" aria-pressed="false">♡ Saved tracks</button></div><div id="grid"></div><div id="empty" hidden><h3>No tracks in this mix.</h3><p>Try another search or a different mood.</p><button class="primary" id="reset">Reset filters ↗</button></div></section>
+<section class="usage wrap" id="usage"><div><p class="eyebrow">MADE FOR YOUR IDEAS</p><h2>Less searching.<br>More creating.</h2></div><div><p>AIVable is building a home for original, royalty-free music. Discover a sound, listen on YouTube, and bring your next project to life.</p><p class="note">Check each official track's YouTube description for its licence, attribution requirements, and download options before using it. Sample entries are illustrative and have no audio or licence attached.</p><a href="https://www.youtube.com/@aivable" target="_blank" rel="noopener">Explore AIVable on YouTube ↗</a></div></section><section class="support wrap"><span>✳</span><div><h3>Keep the music flowing.</h3><p>Help make the next AIVable track happen.</p></div><a class="outline" href="https://www.buymeacoffee.com/aivable" target="_blank" rel="noopener">Support AIVable ↗</a></section></main><footer class="wrap"><a class="logo" href="./">AIVable</a><p>Independent music. Made for possibility.</p><span>© <span id="year"></span> AIVable</span></footer><dialog id="player"><button id="close" aria-label="Close player">×</button><h2 id="title"></h2><div id="video"></div><a id="watch" target="_blank" rel="noopener">Watch on YouTube ↗</a></dialog><!-- AIVABLE_SCRIPTS_START -->
+<script>
+// Replace samples with actual releases. Set demo:false and add a YouTube video ID.
+window.AIVABLE_TRACKS = [
+ {id:'sample-1',title:'After Hours',genre:'Electronic',mood:'Dreamy',duration:204,bpm:92,color:'violet',art:'rings',youtubeId:null,demo:true},
+ {id:'sample-2',title:'Golden Hour',genre:'Lo-fi',mood:'Relaxed',duration:167,bpm:78,color:'amber',art:'sun',youtubeId:null,demo:true},
+ {id:'sample-3',title:'Into the Unknown',genre:'Cinematic',mood:'Epic',duration:238,bpm:110,color:'blue',art:'mountain',youtubeId:null,demo:true},
+ {id:'sample-4',title:'Slow Sunday',genre:'Ambient',mood:'Peaceful',duration:192,bpm:65,color:'sage',art:'waves',youtubeId:null,demo:true},
+ {id:'sample-5',title:'Neon Motion',genre:'Electronic',mood:'Energetic',duration:181,bpm:128,color:'pink',art:'grid',youtubeId:null,demo:true},
+ {id:'sample-6',title:'Small Beginnings',genre:'Acoustic',mood:'Uplifting',duration:156,bpm:96,color:'sand',art:'flower',youtubeId:null,demo:true}
+];
 
-    .logo {
-      font-size: 3rem;
-      font-weight: bold;
-      color: var(--accent);
-      margin-bottom: 0.5em;
-    }
+const tracks=window.AIVABLE_TRACKS||[], $=s=>document.querySelector(s);
+const state={genre:'All tracks',mood:'all',query:'',sort:'newest',savedOnly:false};
+let saved=new Set();try{const data=JSON.parse(localStorage.getItem('aivable-saved')||'[]');if(Array.isArray(data))saved=new Set(data);}catch{}
+const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const time=s=>`${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;
+$('#genres').innerHTML=['All tracks',...new Set(tracks.map(t=>t.genre))].map(g=>`<button data-genre="${esc(g)}" aria-pressed="${g===state.genre}">${esc(g)}</button>`).join('');
+[...new Set(tracks.map(t=>t.mood))].sort().forEach(m=>$('#mood').add(new Option(m,m)));
+function render(){let list=tracks.filter(t=>(state.genre==='All tracks'||t.genre===state.genre)&&(state.mood==='all'||t.mood===state.mood)&&(!state.savedOnly||saved.has(t.id))&&`${t.title} ${t.genre} ${t.mood}`.toLowerCase().includes(state.query));if(state.sort==='name')list.sort((a,b)=>a.title.localeCompare(b.title));if(state.sort==='duration')list.sort((a,b)=>a.duration-b.duration);$('#count').textContent=`${list.length} ${list.length===1?'track':'tracks'}`;$('#empty').hidden=!!list.length;$('#grid').innerHTML=list.map(t=>`<article><div class="cover ${esc(t.color)} ${esc(t.art)}"><span class="cover-brand">AIVable / ${String(tracks.indexOf(t)+1).padStart(2,'0')}</span><div class="shape"></div><h3>${esc(t.title)}</h3><small>${t.demo?'CONCEPT ARTWORK':'ORIGINAL MUSIC'}</small><button class="play" data-play="${esc(t.id)}" aria-label="${t.demo?'Visit YouTube for':'Play'} ${esc(t.title)}">${t.demo?'↗':'▶'}</button></div><div class="track-title"><h3>${esc(t.title)}</h3><button class="save" data-save="${esc(t.id)}" aria-label="${saved.has(t.id)?'Unsave':'Save'} ${esc(t.title)}" aria-pressed="${saved.has(t.id)}">${saved.has(t.id)?'♥':'♡'}</button></div><div class="meta"><span>${esc(t.genre)} · ${esc(t.mood)}</span><span>${time(t.duration)}</span></div><div class="detail"><span>${t.bpm} BPM</span><span>${t.demo?'SAMPLE TRACK':'YOUTUBE RELEASE'}</span></div></article>`).join('');document.querySelectorAll('[data-genre]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.genre===state.genre));}
+$('#search').addEventListener('input',e=>{state.query=e.target.value.trim().toLowerCase();render();});$('#sort').addEventListener('change',e=>{state.sort=e.target.value;render();});$('#mood').addEventListener('change',e=>{state.mood=e.target.value;render();});$('#genres').addEventListener('click',e=>{const b=e.target.closest('[data-genre]');if(b){state.genre=b.dataset.genre;render();}});$('#saved').addEventListener('click',()=>{state.savedOnly=!state.savedOnly;$('#saved').setAttribute('aria-pressed',state.savedOnly);render();});$('#reset').addEventListener('click',()=>{Object.assign(state,{genre:'All tracks',mood:'all',query:'',savedOnly:false});$('#search').value='';$('#mood').value='all';$('#saved').setAttribute('aria-pressed',false);render();});
+$('#grid').addEventListener('click',e=>{const b=e.target.closest('[data-save]');if(b){saved.has(b.dataset.save)?saved.delete(b.dataset.save):saved.add(b.dataset.save);try{localStorage.setItem('aivable-saved',JSON.stringify([...saved]));}catch{}render();return;}const p=e.target.closest('[data-play]');if(!p)return;const t=tracks.find(t=>t.id===p.dataset.play);if(t.demo||!/^[\w-]{11}$/.test(t.youtubeId||'')){window.open('https://www.youtube.com/@aivable','_blank','noopener,noreferrer');return;}$('#title').textContent=t.title;$('#video').innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${t.youtubeId}?autoplay=1" title="${esc(t.title)}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;$('#watch').href=`https://www.youtube.com/watch?v=${t.youtubeId}`;$('#player').showModal();});$('#close').addEventListener('click',()=>$('#player').close());$('#player').addEventListener('close',()=>{$('#video').innerHTML='';});$('#year').textContent=new Date().getFullYear();render();
 
-    h1 {
-      font-size: 2rem;
-      margin: 0.5em 0;
-    }
-
-    p {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 1em auto;
-      line-height: 1.6;
-    }
-
-    .button {
-      background-color: transparent;
-      border: 2px solid var(--accent);
-      color: var(--accent);
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 8px;
-      text-decoration: none;
-      margin: 10px;
-      display: inline-block;
-      transition: all 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: var(--accent);
-      color: var(--main-bg);
-    }
-
-    .coming-soon {
-      margin-top: 2em;
-      font-style: italic;
-      color: #888;
-    }
-
-    @media screen and (max-width: 600px) {
-      .logo {
-        font-size: 2.2rem;
-      }
-
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="logo">AIVable</div>
-  <h1>Royalty-Free Music, Powered by AI</h1>
-  <p>
-    AIVable provides copyright-free, high-quality music for commercial and non-commercial use. Whether you're a content creator, developer, or business owner — our tracks are free to use, forever.
-  </p>
-  <p>
-    We rely on your support to keep the beats flowing. If you love what we do, consider donating to help keep the project alive.
-  </p>
-  <a href="https://www.buymeacoffee.com/aivable" class="button">Donate</a>
-  <a href="https://www.youtube.com/@aivable" class="button">YouTube Channel</a>
-  <div class="coming-soon">🚀 Full site launching soon...</div>
-</body>
-</html>
+</script>
+<!-- AIVABLE_SCRIPTS_END -->
+</body></html>
